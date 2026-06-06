@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>竹下整骨院｜福岡市博多区</title>
+
+<style>
+  body {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    margin: 0;
+    background: #fff8f0;
+    color: #333;
+  }
+
+  /* ヘッダー（ロゴ構成） */
+  header {
+    background: #ff8c00;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  header .logo-jp {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  header .logo-en {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    opacity: 0.9;
+  }
+  header .logo-mark {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 92%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .section {
+    margin: 32px 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* 診療時間テーブル */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ffd9b3;
+  }
+  th {
+    background: #ffe6cc;
+  }
+
+  /* 患者様の声（カードデザイン） */
+  .voice-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  .voice-card h3 {
+    margin-top: 0;
+    color: #ff8c00;
+  }
+
+  /* スマホ固定予約ボタン */
+  .fixed-reserve {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ff8c00;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  footer {
+    background: #ff8c00;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 60px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-jp">竹下整骨院</div>
+  <div class="logo-en">TAKESHITA SEIKOTSUIN</div>
+  <div class="logo-mark">🟧</div>
+</header>
+
+<div class="container">
+
+  <!-- 外観写真 -->
+  <section class="section">
+    <img src="img/outside.jpg" alt="竹下整骨院 外観写真">
+  </section>
+
+  <!-- 院について -->
+  <section class="section">
+    <h2 style="color:#ff8c00;">院について</h2>
+    <p>
+      竹下整骨院は、福岡市博多区にある地域密着型の整骨院です。<br>
+      肩こり・腰痛・膝痛・スポーツ障害・交通事故のむち打ちなど、痛みの原因を丁寧に確認し、根本改善を目指した施術を行います。
+    </p>
+  </section>
+
+  <!-- 施術風景 -->
+  <section class="section">
+    <h2 style="color:#ff8c00;">施術風景</h2>
+    <img src="img/treatment.jpg" alt="施術風景">
+  </section>
+
+  <!-- 診療時間 -->
+  <section class="section" style="background:#fff3e6; padding:24px; border-radius:10px;">
+    <h2 style="color:#ff8c00; margin-top:0;">診療時間</h2>
+
+    <table>
+      <tr><th>曜日</th><th>午前</th><th>午後</th></tr>
+      <tr><td>月</td><td>8:30〜12:30</td><td>14:30〜19:30</td></tr>
+      <tr><td>火</td><td>8:30〜12:30</td><td>14:30〜19:30</td></tr>
+      <tr><td>水</td><td>8:30〜12:30</td><td style="color:#999;">午後休診</td></tr>
+      <tr><td>木</td><td>8:30〜12:30</td><td>14:30〜19:30</td></tr>
+      <tr><td>金</td><td>8:30〜12:30</td><td>14:30〜19:30</td></tr>
+      <tr><td>土</td><td>8:30〜13:00</td><td style="color:#999;">午後休診</td></tr>
+      <tr><td>日・祝</td><td colspan="2" style="color:#999;">休診</td></tr>
+    </table>
+  </section>
+
+  <!-- 患者様の声 -->
+  <section class="section">
+    <h2 style="color:#ff8c00;">患者様の声</h2>
+
+    <div class="voice-card">
+      <h3>肩こりが軽くなりました！</h3>
+      <p>デスクワークでつらかった肩こりが、数回の施術でかなり楽になりました。</p>
+    </div>
+
+    <div class="voice-card">
+      <h3>交通事故のむち打ちが改善</h3>
+      <p>事故後の首の痛みが続いていましたが、丁寧な施術で改善しました。</p>
+    </div>
+
+  </section>
+
+  <!-- アクセス -->
+  <section class="section">
+    <h2 style="color:#ff8c00;">アクセス</h2>
+    <p>
+      住所：福岡市博多区竹下4丁目6-14 1階<br>
+      電話：092-483-7565
+    </p>
+  </section>
+
+</div>
+
+<!-- スマホ固定予約ボタン -->
+<a href="#" class="fixed-reserve">📱 予約する</a>
+
+<footer>
+  © 竹下整骨院（福岡市博多区）｜TEL 092-483-7565
+</footer>
+
+</body>
+</html>
