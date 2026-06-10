@@ -39,37 +39,6 @@
     font-size: 13px;
     color: #fff;
   }
-</style>
-
-
-
-    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-    margin: 0;
-    background: #fff8f0;
-    color: #333;
-  }
-
-  /* ヘッダー（ロゴ構成） */
-  header {
-    background: #ff8c00;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
-  }
-  header .logo-jp {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  header .logo-en {
-    font-size: 0.9rem;
-    margin-top: 4px;
-    opacity: 0.9;
-  }
-  header .logo-mark {
-    margin-top: 10px;
-    font-size: 2rem;
-  }
 
   .container {
     width: 92%;
@@ -141,10 +110,14 @@
 
 <body>
 
-<header>
-  <div class="logo-jp">竹下整骨院</div>
-  <div class="logo-en">TAKESHITA SEIKOTSUIN</div>
-  <div class="logo-mark">🟧</div>
+<!-- ★★★ ロゴヘッダー ★★★ -->
+<header class="site-header">
+  <a href="/" class="logo-link">
+    <img src="img/rogo-name.png" alt="竹下整骨院 Takeshita Seikotsuin" class="site-logo">
+  </a>
+  <div class="site-title">
+    竹下整骨院 <span class="site-title-en">Takeshita Seikotsuin</span>
+  </div>
 </header>
 
 <div class="container">
@@ -221,3 +194,4 @@
 
 </body>
 </html>
+
