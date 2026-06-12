@@ -15,7 +15,7 @@
 
   /* ヘッダー（ロゴ構成） */
   header {
-    background: #ff8c00; /* ← 元のオレンジに戻した */
+    background: #ff8c00;
     color: #fff;
     padding: 20px 10px;
     text-align: center;
@@ -82,20 +82,32 @@
     color: #ff8c00;
   }
 
-  /* スマホ固定予約ボタン */
-  .fixed-reserve {
+  /* スマホ固定 2ボタン */
+  .fixed-buttons {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #ff8c00;
-    color: #fff;
+    display: flex;
+    z-index: 999;
+  }
+
+  .fixed-btn {
+    flex: 1;
     text-align: center;
     padding: 14px 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    color: #fff;
     text-decoration: none;
-    z-index: 999;
+  }
+
+  .fixed-call {
+    background: #ff8c00;
+  }
+
+  .fixed-net {
+    background: #0077cc;
   }
 
   footer {
@@ -106,34 +118,6 @@
     margin-top: 60px;
   }
 </style>
-  /* 2つの固定予約ボタン（横並び） */
-.fixed-buttons {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  z-index: 999;
-}
-
-.fixed-btn {
-  flex: 1;
-  text-align: center;
-  padding: 14px 0;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-
-.fixed-call {
-  background: #ff8c00; /* 電話ボタン（オレンジ） */
-}
-
-.fixed-net {
-  background: #0077cc; /* ネット予約ボタン（青） */
-}
-
 </head>
 
 <body>
@@ -213,14 +197,11 @@
 
 </div>
 
-<!-- スマホ固定 2ボタン -->
+<!-- ★★★ スマホ固定 2ボタン ★★★ -->
 <div class="fixed-buttons">
   <a href="tel:0924837565" class="fixed-btn fixed-call">📞 電話予約</a>
   <a href="https://予約サイトURL" target="_blank" class="fixed-btn fixed-net">📝 ネット予約</a>
 </div>
-
-
-
 
 <footer>
   © 竹下整骨院（福岡市博多区）｜TEL 092-483-7565
