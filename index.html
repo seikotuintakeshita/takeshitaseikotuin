@@ -106,6 +106,34 @@
     margin-top: 60px;
   }
 </style>
+  /* 2つの固定予約ボタン（横並び） */
+.fixed-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+}
+
+.fixed-btn {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fixed-call {
+  background: #ff8c00; /* 電話ボタン（オレンジ） */
+}
+
+.fixed-net {
+  background: #0077cc; /* ネット予約ボタン（青） */
+}
+
 </head>
 
 <body>
@@ -185,8 +213,12 @@
 
 </div>
 
-<!-- スマホ固定予約ボタン -->
-<a href="tel:0924837565" class="fixed-reserve">📱 電話で予約</a>
+<!-- スマホ固定 2ボタン -->
+<div class="fixed-buttons">
+  <a href="tel:0924837565" class="fixed-btn fixed-call">📞 電話予約</a>
+  <a href="https://予約サイトURL" target="_blank" class="fixed-btn fixed-net">📝 ネット予約</a>
+</div>
+
 
 
 
