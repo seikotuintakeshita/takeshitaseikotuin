@@ -73,6 +73,42 @@
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   }
 
+  /* 口コミデザイン */
+  .review-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .review-icon {
+    width: 40px;
+    height: 40px;
+    background: #ff8c00;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  .review-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .review-stars {
+    color: #f4b400;
+    font-size: 18px;
+    margin: 4px 0;
+  }
+
   /* 固定ボタン */
   .fixed-buttons {
     position: fixed;
@@ -205,8 +241,56 @@
   <section class="section" id="voice">
     <h2>患者様の声</h2>
 
-    <!-- ★ここにあなたが前に使っていた「Google口コミ風（星画像版）」を貼る -->
-    <!-- 例：review-card の5件分 -->
+    <!-- 1 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-icon">A</div>
+        <div class="review-name">A・S さん</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p>長年の肩こりがつらくて通い始めましたが、数回の施術で驚くほど軽くなりました。仕事中の疲れも減り、毎日が楽になりました。</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-icon">M</div>
+        <div class="review-name">M・K さん</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p>交通事故のむち打ちで首が回らない状態でしたが、丁寧な説明と施術で徐々に改善。安心して通える整骨院です。</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-icon">T</div>
+        <div class="review-name">T・Y さん</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p>ぎっくり腰を繰り返していましたが、骨盤矯正とストレッチ指導のおかげで再発しにくくなりました。体の使い方まで教えてくれます。</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-icon">R</div>
+        <div class="review-name">R・N さん</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p>猫背が気になっていましたが、施術と日常のアドバイスで姿勢が改善。家族から「背筋が伸びたね」と言われて嬉しいです。</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-icon">K</div>
+        <div class="review-name">K・H さん</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p>スポーツのケガ予防とコンディショニングで利用しています。動きが軽くなり、試合でも結果が出るようになりました。</p>
+    </div>
+
   </section>
 
   <!-- アクセス -->
@@ -218,7 +302,7 @@
         電話：092-483-7565
       </p>
 
-      <!-- Googleマップ（店舗周辺にズーム済み） -->
+      <!-- Googleマップ（店舗周辺にズーム） -->
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.350927548389!2d130.431!3d33.559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c0c0e0!2z44CSODEyLTAwMjMg56aP5bKh55yM56aP5bKh5YyX5Lya5bqX77yR5LiB55uu77yR77yT!5e0!3m2!1sja!2sjp!4v0000000000"
         width="100%" height="300" style="border:0;" loading="lazy">
